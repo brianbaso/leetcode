@@ -38,7 +38,6 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     const num1 = BigInt(reverse1.join(''))
     const num2 = BigInt(reverse2.join(''))
     const sum = num1 + num2
-
     
     const sumArray = sum.toString().split('').map(Number)
     
