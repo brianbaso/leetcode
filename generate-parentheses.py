@@ -1,9 +1,9 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        self.result = []
+        result = []
         def generateCombos(curr, open, close, n):
             if len(curr) == 2 * n:
-                self.result.append(curr)
+                result.append(curr)
                 return
 
             if close <= n and open <= n:
@@ -15,4 +15,4 @@ class Solution:
                 return
 
         generateCombos("", 0, 0, n)
-        return self.result
+        return result
